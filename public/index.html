@@ -1,0 +1,35 @@
+<!--HTML document preamble-->
+<!DOCTYPE html>
+<html>
+
+<!-- Static webpage components -->
+  <head>
+    <title>Message Everyone</title>
+
+    <!--Responsive elements and stylesheet linking-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div id="window">
+      <h1>Message Everyone</h1>
+
+      <!-- Declaring chatbox for usage in other files -->
+        <div id="chatbox"></div>
+
+      <!-- Input components -->
+      <input type="text" placeholder="Write your message..." id="msgBox" />
+      <button onclick="uploadMsg()" id="enterKey">Shoot</button>
+
+      <!-- User count and dark mode toggle -->
+      <div id="bottomBar">
+        <span id="userCount">Currently online: 0</span>
+        <button id="themeToggle">Toggle Theme</button>
+      </div>
+    </div>
+
+    <!-- Javascript linking -->
+    <script src="script.js"></script>
+  </body>
+</html>
